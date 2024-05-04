@@ -1,13 +1,27 @@
 import React from 'react'
 import Title from '../fonts/Title'
-
+import cocktail from '../../../public/cocktail.png'
+import juice from '../../../public/juice.png'
+import lemonade from '../../../public/lemonade.png'
 
 const MenuCard = ({title , isDetailedMenu , datas}) => {
   return (
     <>
         <section className='bg-black py-8'>
-            <div className='container mx-auto px-4'>
-                <div className='border border-white mx-14 p-6 hover:scale-90'>
+            <div className='container mx-auto px-4 relative'>
+                <div className='border border-white relative mx-14 p-6 hover:scale-90'>
+                    <img
+                        src={cocktail}
+                        alt='Cocktail'
+                        className='absolute top-0 left-0 w-20 h-20 object-cover'
+                        style={{ zIndex: 1 }} 
+                    />
+                    <img
+                        src={lemonade}
+                        alt='lemonade'
+                        className='absolute bottom-0 right-0 w-20 h-20 object-cover'
+                        style={{ zIndex: 1 }} 
+                    />
                     <Title heading={title}  isMain={false}/>
                     {isDetailedMenu ? (
                         <>

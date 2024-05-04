@@ -8,7 +8,7 @@ const Info = () => {
             <Button text={'order online'} isBlue={true}/>
 
             <div className='bg-[#C5A059] bg-opacity-70 py-4 mt-8 mx-10'>
-                <div className='flex flex-col gap-4 sm:flex-row sm:justify-center'>
+                <div className='flex flex-col gap-4 sm:flex-row sm:justify-center mx-4'>
                     <p className='text-white text-sm'>
                         Food may not be refunded. 
                         If your food was made incorrectly we will remake it for you.
