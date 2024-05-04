@@ -7,7 +7,7 @@ import connectDb from './connection/database.js';
 const app = express();
 
 const corsOptions = {
-    origin: ['http://localhost:5173' , 'https://bars-ngrills-deepnet.vercel.app/']
+    origin: ['http://localhost:5173' , 'https://bars-ngrills-deepnet.vercel.app']
 }
 app.use(cors(corsOptions));
 app.use(morgan('dev'));
