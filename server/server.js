@@ -2,7 +2,6 @@ import express from 'express'
 import morgan from 'morgan'
 import cors from 'cors'
 import menuRoutes from './routes/menuRoute.js'
-import connectDb from './connection/database.js';
 
 const app = express();
 
@@ -14,7 +13,6 @@ app.use(morgan('dev'));
 app.use(express.json());
 app.use(express.urlencoded({extended : true}));
 
-connectDb();
 
 app.use('/api/menu' , menuRoutes);
 

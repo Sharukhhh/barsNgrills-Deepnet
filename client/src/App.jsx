@@ -6,14 +6,13 @@ import Footer from './components/footer/Footer'
 import MenuCard from './components/cards/MenuCard'
 import { getCoctails, getDrinks, getFlavours } from './api/calls'
 import Info from './components/Info'
-import {BeatLoader} from 'react-spinners'
+
 
 const App = () => {
 
   const [drinksMenu , setDrinksMenu] = useState([]);
   const [cocktailMenu , setCockTailMenu] = useState([]);
   const [hookahFlavours, setHookhFlavours] = useState([])
-  const [loading , setLoading] = useState(true);
 
   useEffect(() => {
     
