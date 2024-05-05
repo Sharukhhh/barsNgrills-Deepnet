@@ -1,31 +1,29 @@
 import React from 'react'
 import Title from '../fonts/Title'
-import cocktail from '../../../public/cocktail.png'
-import juice from '../../../public/juice.png'
-import lemonade from '../../../public/lemonade.png'
 
-const MenuCard = ({title , isDetailedMenu , datas}) => {
+
+const MenuCard = ({title , isDetailedMenu , datas , image1 , image2}) => {
   return (
     <>
         <section className='bg-black py-8'>
             <div className='container mx-auto px-4 relative'>
-                <div className='border border-white relative mx-14 p-6 hover:scale-90'>
+                <div className='border border-white relative mx-8 p-6 hover:scale-95'>
                     <img
-                        src={cocktail}
-                        alt='Cocktail'
-                        className='absolute top-0 left-0 w-20 h-20 object-cover'
+                        src={image1}
+                        alt='drinks'
+                        className='absolute -top-10 -left-4 w-20 h-24 object-cover'
                         style={{ zIndex: 1 }} 
                     />
                     <img
-                        src={lemonade}
-                        alt='lemonade'
-                        className='absolute bottom-0 right-0 w-20 h-20 object-cover'
+                        src={image2}
+                        alt='drinks'
+                        className='absolute -bottom-2 -right-6 w-20 h-24 object-cover'
                         style={{ zIndex: 1 }} 
                     />
                     <Title heading={title}  isMain={false}/>
                     {isDetailedMenu ? (
                         <>
-                            <div className='mx-6 grid grid-cols-1 sm:grid-cols-2 gap-4'>
+                            <div className='mx-5 grid grid-cols-1 sm:grid-cols-2 gap-4'>
                                 {datas?.length > 0 ? (
                                     datas?.map((data) => (
                                         <div key={data?._id} className='flex flex-col'>

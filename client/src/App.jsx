@@ -6,6 +6,9 @@ import Footer from './components/footer/Footer'
 import MenuCard from './components/cards/MenuCard'
 import { getCoctails, getDrinks, getFlavours } from './api/calls'
 import Info from './components/Info'
+import cocktail from '../public/cocktail.png'
+import lemonade from '../public/lemonade.png'
+import juice from '../public/juice.png'
 
 
 const App = () => {
@@ -47,18 +50,24 @@ const App = () => {
         title={'DRINKS'} 
         isDetailedMenu={true}
         datas={drinksMenu}
+        image1={lemonade}
+        image2={juice}
       />
 
       <MenuCard 
         title={'BRUNCH COCKTAILS'} 
         isDetailedMenu={true}
         datas={cocktailMenu}
+        image1={juice}
+        image2={cocktail}
       />
 
       <MenuCard 
         title={'HOOKAH FLAVOURS'} 
         isDetailedMenu={false}
         datas={hookahFlavours}
+        image1={cocktail}
+        image2={lemonade}
       />
 
       <Info/>
