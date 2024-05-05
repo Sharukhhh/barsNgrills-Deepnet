@@ -23,7 +23,7 @@ const MenuCard = ({title , isDetailedMenu , datas , image1 , image2}) => {
                     <Title heading={title}  isMain={false}/>
                     {isDetailedMenu ? (
                         <>
-                            <div className='mx-5 grid grid-cols-1 sm:grid-cols-2 gap-4'>
+                            <div className='mx-5 grid grid-cols-1 sm:grid-cols-2 gap-7'>
                                 {datas?.length > 0 ? (
                                     datas?.map((data) => (
                                         <div key={data?._id} className='flex flex-col'>
