@@ -6,12 +6,12 @@
 
 ## Screenshots
 
-![screenshot-1](screenshots/img1.png);
+![screenshot-1](screenshots/img1.png)
 
 ---
 
-![screenshot-1](screenshots/img2.png);
+![screenshot-1](screenshots/img2.png)
 
 ---
 
-![screenshot-1](screenshots/img3.png);
+![screenshot-1](screenshots/img3.png)
